@@ -1,5 +1,5 @@
 class `1_Variable` {
-    main()
+    //main()
 }
 
 /**
@@ -33,8 +33,8 @@ fun main(){
      */
     val c : Int
     c = 3
-    val d
-    d = 123
+//    val d
+//    d = 123
 
     /**
      * 변수 선언의 두 가지 키워드
@@ -44,9 +44,9 @@ fun main(){
      * ```
      * 변수 f와 같이 처음에 Int로 타입 추론이 되어 타입이 고정된 변수의 경우, 이후에 다른 타입으로 재할당은 불가능하다.
      */
-    val e : String = "Hello"
-    e = "World"
-
-    var f = 123
-    f = "hi"
+//    val e : String = "Hello"
+//    e = "World"
+//
+//    var f = 123
+//    f = "hi"
 }
