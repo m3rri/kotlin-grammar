@@ -61,7 +61,23 @@ fun greeting(msg : String = "안녕하세요") {
     println(msg)
 }
 
+//fun main(){
+//    greeting()
+//    greeting("Hi")
+//}
+
+/**
+ * named argument
+ *
+ * 함수 호출할 때 파라미터의 순서를 지키지 않아도 name = value 이런식으로 넘길 수 있다.
+ */
+fun log(level: String = "INFO", msg: String){
+    println("[$level]$msg")
+}
+
 fun main(){
-    greeting()
-    greeting("Hi")
+    log(msg="인포 로그")
+    log(level = "DEBUG", "디버그 로그")
+    log("WARN", "워닝 로그")
+    log(level = "ERROR", msg="에러 로그")
 }
