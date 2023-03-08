@@ -19,7 +19,7 @@ fun main(){
     //throw NullPointerException()
 
 //    val c: String? = null
-//    val d = c!!.length //단언 연산자
+//    val d = c!!.length //단언 연산자(not-null assertion operator)
 //    println(d)
 
     println(Four_JavaNullSafety.getNullStr()?.length) //null
