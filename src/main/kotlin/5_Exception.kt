@@ -1,2 +1,3 @@
-class `5_Exception` {
+fun main(){
+
 }
