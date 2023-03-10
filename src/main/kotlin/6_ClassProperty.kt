@@ -18,7 +18,7 @@ class Coffee(var name: String? = "")
  *
  * TrailingCoffee 클래스의 파라미터 부분을 보면, price 파라미터 선언줄 끝에 ","가 남아 있어도 컴파일 에러가 발생하지 않는 것을 볼 수 있음
  *
- * 여러개를 열거하는 경우에는 어떤 상황에서도 사용할 수 있다.
+ * 여러개를 열거하는 경우에는 어떤 상황에서도 사용할 수 있다. (단, 여러 interface를 상속받을 때 사용하는 콤마에서는 적용하면 안됨)
  *
  * class 생성자 파라미터, method 파라미터, enum class, ...
  *
@@ -52,6 +52,7 @@ class TrailingCoffee(
      * field : 값을 가지고 있는 그냥 class 멤버 변수. 읽기만 가능하거나, 수정도 가능하다 (var, val)
      * public일 수도 있고, private일 수도 있다.
      * property : private field와 accessors를 가지는 좀더 복잡한 element이다.
+     * property의 초기값이 할당되지 않으면 backing field를 사용할 수 없다.
      *
      * read-only property = private field + getter
      * mutable property = private field + getter + setter
